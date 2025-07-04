@@ -10,7 +10,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Токен твоего бота (получи у @BotFather)
-BOT_TOKEN = "8105134473:AAE-bTaKvOtD03rIIUG2dH8BnbaaF7KKmAU"
+import os
+BOT_TOKEN = os.getenv('BOT_TOKEN')
 
 # Хранилище заметок пользователей (в реальном боте лучше использовать базу данных)
 user_notes = {}

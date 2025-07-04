@@ -433,7 +433,7 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
         
         # Отправляем аудиофайл
         try:
-            with open('attached_assets/untitled_1751277144360.mp3', 'rb') as audio_file:
+            with open('untitled_1751277144360.mp3', 'rb') as audio_file:
                 await context.bot.send_audio(
                     chat_id=query.message.chat_id,
                     audio=audio_file,
